@@ -7,7 +7,7 @@ render = false
 tags = ["rust"]
 +++
 
-this page is for testing2
+This is the first post
 
 <!-- more -->
 
