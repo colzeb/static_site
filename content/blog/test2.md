@@ -1,6 +1,7 @@
 +++
 title = "Page for testing2"
 date = 2022-06-03
+render = false
 
 [taxonomies]
 tags = ["rust"]
