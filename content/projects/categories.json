@@ -1,4 +1,5 @@
 {
-  "Software": "software",
-  "Films": "film"
+  "Rust": "rust",
+  "Salesforce": "apex",
+  "Java": "java"
 }
