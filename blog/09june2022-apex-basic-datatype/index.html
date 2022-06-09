@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+
+    <title>List Data Type Apex - ItsPankaj</title>
+    <meta name="description" content="Welcome">
+
+    <link rel="stylesheet" href="https://itspankaj.com/main.css">
+
+    <link rel="preload" href=https:&#x2F;&#x2F;cdnjs.cloudflare.com&#x2F;ajax&#x2F;libs&#x2F;font-awesome&#x2F;6.0.0-beta2&#x2F;css&#x2F;all.min.css as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href=https:&#x2F;&#x2F;cdnjs.cloudflare.com&#x2F;ajax&#x2F;libs&#x2F;font-awesome&#x2F;6.0.0-beta2&#x2F;css&#x2F;all.min.css></noscript>
+
+    
+    <link rel="alternate" type="application/atom+xml" title="RSS" href="https://itspankaj.com/atom.xml">
+    
+
+    
+    
+    <meta property="og:locale" content="en_US">
+    
+    <meta property="og:title" content="List Data Type Apex">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:author" content="https://itspankaj.com/about/">
+    <meta property="article:published_time" content="2022-06-09">
+    
+    
+    <meta property="article:tag" content="salesforce">
+    
+    
+    
+    
+    <meta property="og:url" content="https://itspankaj.com/blog/09june2022-apex-basic-datatype/">
+    
+    
+    <meta property="og:description" content="List Comman practice
+">
+    
+
+
+    
+    
+</head>
+<body>
+<div class="container">
+    
+    
+    <header>
+        <h1 class="site-header">
+            <a href="https:&#x2F;&#x2F;itspankaj.com">ItsPankaj</a>
+        </h1>
+        <nav>
+            <ul>
+            
+            
+                
+                <li><a class="active" href="https:&#x2F;&#x2F;itspankaj.com&#x2F;blog">Blog</a></li>
+            
+                
+                <li><a  href="https:&#x2F;&#x2F;itspankaj.com&#x2F;projects">Projects</a></li>
+            
+                
+                <li><a  href="https:&#x2F;&#x2F;itspankaj.com&#x2F;tags">Topic</a></li>
+            
+                
+                <li><a  href="https:&#x2F;&#x2F;itspankaj.com&#x2F;about">About</a></li>
+            
+            
+            </ul>
+        </nav>
+    </header>
+    
+    
+
+<article class="post">
+    
+    
+    
+        
+        <header>
+            <h1>List Data Type Apex</h1>
+            <h2 class="post-summary">List Comman practice
+</h2>
+        </header>
+        
+        
+    <div class="article-info">
+        
+        
+        <div class="article-date">June 09, 2022 ◦ 1 min ◦ </div>
+        
+        <div class="article-taxonomies">
+            
+            
+                <ul class="article-tags">
+                    
+                    <li><a href="https://itspankaj.com/tags/salesforce/">#salesforce</a></li>
+                    
+                </ul>
+            
+        </div>
+    </div>
+
+        
+    
+    
+    <div class="content">
+        <span id="continue-reading"></span><h2 id="list">LIST<a class="zola-anchor" href="#list" aria-label="Anchor link for: list">🔗</a></h2>
+<ul>
+<li>Hold Multiple value of same type of data. eg to store 10 names.</li>
+<li>Have index for each element start with 0.</li>
+</ul>
+<pre data-lang="java" style="background-color:#fafafa;color:#80cbc4;" class="language-java "><code class="language-java" data-lang="java"><span style="font-style:italic;color:#ccd7da;">// Basic List to hold String Value
+</span><span style="color:#ffb62c;">List</span><span style="color:#39adb5;">&lt;</span><span style="color:#ffb62c;">String</span><span style="color:#39adb5;">&gt;</span><span> names </span><span style="color:#39adb5;">= </span><span style="color:#7c4dff;">new </span><span style="color:#ffb62c;">List</span><span style="color:#39adb5;">&lt;</span><span style="color:#ffb62c;">String</span><span style="color:#39adb5;">&gt;();
+</span><span>
+</span><span style="font-style:italic;color:#ccd7da;">// to check number of element in List
+</span><span style="color:#ffb62c;">System</span><span style="color:#39adb5;">.</span><span style="color:#6182b8;">assertEquals</span><span style="color:#39adb5;">(</span><span style="color:#f76d47;">0</span><span style="color:#39adb5;">,</span><span style="color:#6182b8;"> names</span><span style="color:#39adb5;">.</span><span style="color:#6182b8;">size</span><span style="color:#39adb5;">());
+</span><span>
+</span><span style="font-style:italic;color:#ccd7da;">// to add element in list
+</span><span>names</span><span style="color:#39adb5;">.</span><span style="color:#6182b8;">add</span><span style="color:#39adb5;">(&#39;</span><span style="color:#91b859;">Hello</span><span style="color:#39adb5;">&#39;);
+</span><span>
+</span><span style="font-style:italic;color:#ccd7da;">// to access the value in list
+</span><span style="font-style:italic;color:#ccd7da;">// use the index value which start from 0
+</span><span style="color:#ffb62c;">System</span><span style="color:#39adb5;">.</span><span style="color:#6182b8;">assertEquals</span><span style="color:#39adb5;">(&#39;</span><span style="color:#91b859;">Hello</span><span style="color:#39adb5;">&#39;,</span><span style="color:#6182b8;"> names[</span><span style="color:#f76d47;">0</span><span style="color:#6182b8;">]</span><span style="color:#39adb5;">);
+</span><span style="color:#ffb62c;">System</span><span style="color:#39adb5;">.</span><span style="color:#6182b8;">assertEquals</span><span style="color:#39adb5;">(&#39;</span><span style="color:#91b859;">Hello</span><span style="color:#39adb5;">&#39;,</span><span style="color:#6182b8;"> names</span><span style="color:#39adb5;">.</span><span style="color:#6182b8;">get</span><span style="color:#39adb5;">(</span><span style="color:#f76d47;">0</span><span style="color:#39adb5;">));
+</span></code></pre>
+<pre data-lang="java" style="background-color:#fafafa;color:#80cbc4;" class="language-java "><code class="language-java" data-lang="java"><span style="font-style:italic;color:#ccd7da;">// if you give index greater than its size
+</span><span style="font-style:italic;color:#ccd7da;">// you will get exception
+</span><span style="font-style:italic;color:#7c4dff;">try </span><span style="color:#39adb5;">{
+</span><span>    </span><span style="color:#ffb62c;">String</span><span> temp </span><span style="color:#39adb5;">=</span><span> names</span><span style="color:#39adb5;">.</span><span style="color:#6182b8;">get</span><span style="color:#39adb5;">(</span><span style="color:#f76d47;">1</span><span style="color:#39adb5;">);
+</span><span style="color:#39adb5;">}</span><span style="font-style:italic;color:#7c4dff;">catch</span><span style="color:#39adb5;">(</span><span style="color:#ffb62c;">ListException </span><span style="color:#f76d47;">le</span><span style="color:#39adb5;">){
+</span><span>    </span><span style="color:#ffb62c;">System</span><span style="color:#39adb5;">.</span><span style="color:#6182b8;">assertEquals</span><span style="color:#39adb5;">(&#39;</span><span style="color:#91b859;">List index out of bounds: 1</span><span style="color:#39adb5;">&#39;,</span><span style="color:#6182b8;"> le</span><span style="color:#39adb5;">.</span><span style="color:#6182b8;">getMessage</span><span style="color:#39adb5;">());
+</span><span style="color:#39adb5;">}
+</span></code></pre>
+<pre data-lang="java" style="background-color:#fafafa;color:#80cbc4;" class="language-java "><code class="language-java" data-lang="java"><span style="font-style:italic;color:#ccd7da;">// you can pass list or set in constructor of list
+</span><span style="color:#ffb62c;">List</span><span style="color:#39adb5;">&lt;</span><span style="color:#ffb62c;">String</span><span style="color:#39adb5;">&gt;</span><span> a </span><span style="color:#39adb5;">=</span><span style="color:#7c4dff;">new </span><span style="color:#ffb62c;">List</span><span style="color:#39adb5;">&lt;</span><span style="color:#ffb62c;">String</span><span style="color:#39adb5;">&gt;{&#39;</span><span style="color:#91b859;">zero</span><span style="color:#39adb5;">&#39;, &#39;</span><span style="color:#91b859;">one</span><span style="color:#39adb5;">&#39;, &#39;</span><span style="color:#91b859;">two</span><span style="color:#39adb5;">&#39;};
+</span><span style="color:#ffb62c;">List</span><span style="color:#39adb5;">&lt;</span><span style="color:#ffb62c;">String</span><span style="color:#39adb5;">&gt;</span><span> b </span><span style="color:#39adb5;">=</span><span style="color:#7c4dff;">new </span><span style="color:#ffb62c;">List</span><span style="color:#39adb5;">&lt;</span><span style="color:#ffb62c;">String</span><span style="color:#39adb5;">&gt;(</span><span>a</span><span style="color:#39adb5;">);
+</span><span style="color:#ffb62c;">System</span><span style="color:#39adb5;">.</span><span style="color:#6182b8;">assertEquals</span><span style="color:#39adb5;">(</span><span style="color:#6182b8;">a</span><span style="color:#39adb5;">.</span><span style="color:#6182b8;">get</span><span style="color:#39adb5;">(</span><span style="color:#f76d47;">0</span><span style="color:#39adb5;">),</span><span style="color:#6182b8;"> b</span><span style="color:#39adb5;">.</span><span style="color:#6182b8;">get</span><span style="color:#39adb5;">(</span><span style="color:#f76d47;">0</span><span style="color:#39adb5;">));
+</span><span>        
+</span><span style="color:#ffb62c;">Set</span><span style="color:#39adb5;">&lt;</span><span style="color:#ffb62c;">String</span><span style="color:#39adb5;">&gt;</span><span> aSet </span><span style="color:#39adb5;">= </span><span style="color:#7c4dff;">new </span><span style="color:#ffb62c;">Set</span><span style="color:#39adb5;">&lt;</span><span style="color:#ffb62c;">String</span><span style="color:#39adb5;">&gt;();
+</span><span>aSet</span><span style="color:#39adb5;">.</span><span style="color:#6182b8;">add</span><span style="color:#39adb5;">(&#39;</span><span style="color:#91b859;">one</span><span style="color:#39adb5;">&#39;);
+</span><span>        
+</span><span style="color:#ffb62c;">List</span><span style="color:#39adb5;">&lt;</span><span style="color:#ffb62c;">String</span><span style="color:#39adb5;">&gt;</span><span> aList </span><span style="color:#39adb5;">= </span><span style="color:#7c4dff;">new </span><span style="color:#ffb62c;">List</span><span style="color:#39adb5;">&lt;</span><span style="color:#ffb62c;">String</span><span style="color:#39adb5;">&gt;(</span><span>aSet</span><span style="color:#39adb5;">);
+</span><span style="color:#ffb62c;">System</span><span style="color:#39adb5;">.</span><span style="font-style:italic;color:#7c4dff;">assert</span><span style="color:#39adb5;">(</span><span>aSet</span><span style="color:#39adb5;">.</span><span style="color:#6182b8;">contains</span><span style="color:#39adb5;">(</span><span style="color:#6182b8;">aList</span><span style="color:#39adb5;">.</span><span style="color:#6182b8;">get</span><span style="color:#39adb5;">(</span><span style="color:#f76d47;">0</span><span style="color:#39adb5;">)) );
+</span></code></pre>
+
+    </div>
+    
+</article>
+
+
+    <footer>
+        <p>
+            
+<span class="icon-text">
+  
+
+  
+  <a href="https://twitter.com/pnkazrai" aria-label="Open pnkazrai Twitter" target="_blank">
+    <span class="icon is-large">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true" title="Twitter"></i>
+    </span>
+  </a>
+  
+
+  
+  <a href="https://github.com/colzeb" aria-label="Open colzeb GitHub" target="_blank">
+    <span class="icon is-large">
+      <i class="fab fa-github fa-lg" aria-hidden="true" title="GitHub"></i>
+    </span>
+  </a>
+  
+
+  
+  <a href="https://www.linkedin.com/in/pnkazrai" aria-label="Open pnkazrai LinkedIn" target="_blank">
+    <span class="icon is-large">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true" title="LinkedIn"></i>
+    </span>
+  </a>
+  
+
+  
+
+  
+
+  
+
+  
+  <a href="mailto:hi.p@outllok.com" aria-label="Email hi.p@outllok.com" target="_blank">
+    <span class="icon is-large">
+      <i class="far fa-envelope fa-lg" aria-hidden="true" title="email"></i>
+    </span>
+  </a>
+  
+
+  
+  <a href="https:&#x2F;&#x2F;itspankaj.com/atom.xml" aria-label="Open atom xml feed" target="_blank">
+    <span class="icon is-large">
+      <i class="fas fa-rss fa-lg" aria-hidden="true" title="atom xml feed"></i>
+    </span>
+  </a>
+  
+
+  
+</span>
+
+        </p>
+        <p>
+            
+            
+        </p>
+    </footer>
+</div>
+</body>
+</html>
