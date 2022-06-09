@@ -40,10 +40,8 @@ Cognizant Technology Solutions
 
 ## EDUCATION
 
-#### Computer Science and Technology
+#### Computer Science Engineering
 
 School of Engineering and Technology,
 
-ITM University, Gwalior
-
-08/2014 - 06/2018
+ITM University, Gwalior(2014-2018)
